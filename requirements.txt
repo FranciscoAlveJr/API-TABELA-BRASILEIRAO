@@ -31,3 +31,4 @@ SQLAlchemy==2.0.18
 typing_extensions==4.7.1
 urllib3==2.1.0
 Werkzeug==2.3.6
+gunicorn
