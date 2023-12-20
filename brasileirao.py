@@ -30,5 +30,11 @@ def tabela():
     new_df = new_df.drop(columns=['Time'])
     new_df.insert(loc=0, column='Time', value=nome_list)
     new_df.insert(loc=0, column='POS', value=pos_list)
+
+    colunas_int64 = new_df.select_dtypes(include=['int64']).columns.tolist()
+    new_df[colunas_int64] = new_df[colunas_int64].astype(str)
     
     return new_df
+
+if __name__=="__main__":
+    print(tabela().dtypes)
