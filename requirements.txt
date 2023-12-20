@@ -28,6 +28,7 @@ numpy==1.26.2
 packaging==23.1
 pandas==2.1.4
 passlib==1.7.4
+psycopg2==2.9.9
 PyJWT==2.8.0
 PyMySQL==1.1.0
 python-dateutil==2.8.2
